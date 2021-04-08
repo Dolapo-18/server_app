@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 app.post("/users", (req, res) => {
   names.push(req.body);
 
-  res.send(names);
+  res.sendStatus(200);
 });
 
 app.listen(3000, () => {
